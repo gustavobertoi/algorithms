@@ -1,4 +1,4 @@
-# Stupid Algorithms
+# Algorithms
 
 ## About
 
@@ -15,7 +15,11 @@ Because most of the time, we solve simple problems that don't require ultra comp
 
 ## Languages & Tools
 
-I will use typescript + jest to solve the algorithms, in the future I intend to extend it to other languages as ​​(elixir, go, rust, etc..).
+I will use typescript + jest to solve the algorithms, in the future I intend to extend it to other languages as ​​
+
+- Elixir
+- Go lang
+- Rust
 
 ## Guidelines and folder structure
 

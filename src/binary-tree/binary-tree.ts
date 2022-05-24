@@ -19,14 +19,14 @@ export class BinaryTree {
       return 0;
     }
 
-    const hasLeftOrRightNode = node.hasLeftNode() || node.hasRightNode();
+    const hasLeftOrRightNode = node.right() || node.left();
 
     if (!hasLeftOrRightNode) {
       return 1;
     }
 
-    const nodeA = this.height(node.getLeftNode());
-    const nodeB = this.height(node.getRightNode());
+    const nodeA = this.height(node.right());
+    const nodeB = this.height(node.left());
 
     const height = nodeA > nodeB ? nodeA + 1 : nodeB + 1;
 

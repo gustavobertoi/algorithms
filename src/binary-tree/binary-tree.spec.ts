@@ -37,8 +37,8 @@ describe('BinaryTree class', () => {
       tree
         .setRoot(new TreeNode(1))
         .getRoot()
-        .setLeftNode(new TreeNode(2))
-        .setRightNode(new TreeNode(3));
+        .addLeft(new TreeNode(2))
+        .addRight(new TreeNode(3));
 
       const height = tree.height();
 

@@ -1,40 +1,32 @@
-export class TreeNode {
-  private readonly value: number;
+export class TreeNode<Type = any> {
+  private readonly data: Type;
 
-  private leftNode: TreeNode;
-  private rightNode: TreeNode;
+  private _left: TreeNode;
+  private _right: TreeNode;
 
-  constructor(number: number) {
-    this.value = number;
+  constructor(data: Type) {
+    this.data = data;
   }
 
-  getValue() {
-    return this.value;
+  getValue(): Type {
+    return this.data;
   }
 
-  setLeftNode(leftNode: TreeNode) {
-    this.leftNode = leftNode;
+  addLeft(node: TreeNode) {
+    this._left = node;
     return this;
   }
 
-  getLeftNode() {
-    return this.leftNode;
+  left() {
+    return this._left;
   }
 
-  hasLeftNode() {
-    return Boolean(this.leftNode);
-  }
-
-  setRightNode(node: TreeNode) {
-    this.rightNode = node;
+  addRight(node: TreeNode) {
+    this._right = node;
     return this;
   }
 
-  getRightNode() {
-    return this.rightNode;
-  }
-
-  hasRightNode() {
-    return Boolean(this.rightNode);
+  right() {
+    return this._right;
   }
 }

@@ -1,9 +1,9 @@
 {
-  "name": "@gustavobertoi/stupid-algorithms",
+  "name": "@gustavobertoi/algorithms",
   "version": "1.0.0",
   "description": "This repository is used to store code for complex algorithms that I will probably never use in my life.",
   "main": "index.js",
-  "repository": "git@github.com:gustavobertoi/stupid-algorithms.git",
+  "repository": "git@github.com:gustavobertoi/algorithms.git",
   "author": "Gustavo Bertoi <gustavobertoi@outlook.com>",
   "license": "MIT",
   "private": false,

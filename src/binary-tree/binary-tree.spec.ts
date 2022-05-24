@@ -57,35 +57,31 @@ describe('BinaryTree class', () => {
      *           \
      *            9
      **/
-    // it('Should return 5 when tree has a simple complex logic', () => {
-    //   const tree = new BinaryTree();
+    it('Should return 5 as the height of the tree', () => {
+      const tree = new BinaryTree();
 
-    //   tree
-    //     .setRoot(new TreeNode(1))
-    //     .getRoot()
-    //     .setLeftNode(new TreeNode(2))
-    //     .setRightNode(new TreeNode(3));
+      const root = tree.setRoot(new TreeNode(1)).getRoot();
 
-    //   tree
-    //     .getRoot()
-    //     .getLeftNode()
-    //     .setLeftNode(new TreeNode(4))
-    //     .getLeftNode()
-    //     .setRightNode(new TreeNode(7));
+      root
+        .addLeft(new TreeNode(2))
+        .addRight(new TreeNode(3))
+        .left()
+        ?.addLeft(new TreeNode(4))
+        .left()
+        ?.addRight(new TreeNode(7));
 
-    //   tree
-    //     .getRoot()
-    //     .getRightNode()
-    //     .setLeftNode(new TreeNode(5))
-    //     .setRightNode(new TreeNode(6))
-    //     .getRightNode()
-    //     .setLeftNode(new TreeNode(8))
-    //     .getLeftNode()
-    //     .setRightNode(new TreeNode(9));
+      root
+        .right()
+        ?.addLeft(new TreeNode(5))
+        .addRight(new TreeNode(6))
+        .right()
+        ?.addLeft(new TreeNode(8))
+        .left()
+        ?.addRight(new TreeNode(9));
 
-    //   const height = tree.height();
+      const height = tree.height();
 
-    //   expect(height).toBe(5);
-    // });
+      expect(height).toBe(5);
+    });
   });
 });

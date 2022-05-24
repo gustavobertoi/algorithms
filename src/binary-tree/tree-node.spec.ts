@@ -11,13 +11,13 @@ describe('TreeNode class', () => {
     const node = new TreeNode(1);
     node.addRight(new TreeNode(2));
     expect(node.right()).toBeInstanceOf(TreeNode);
-    expect(node.right().getValue()).toBe(2);
+    expect(node.right()?.getValue()).toBe(2);
   });
 
   it('Should add a left TreeNode instance in a root TreeNode instance', () => {
     const node = new TreeNode(1);
     node.addLeft(new TreeNode(2));
     expect(node.left()).toBeInstanceOf(TreeNode);
-    expect(node.left().getValue()).toBe(2);
+    expect(node.left()?.getValue()).toBe(2);
   });
 });

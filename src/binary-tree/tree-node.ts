@@ -1,11 +1,13 @@
 export class TreeNode<Type = any> {
   private readonly data: Type;
 
-  private _left: TreeNode;
-  private _right: TreeNode;
+  private _left?: TreeNode;
+  private _right?: TreeNode;
 
   constructor(data: Type) {
     this.data = data;
+    this._left = undefined;
+    this._right = undefined;
   }
 
   getValue(): Type {

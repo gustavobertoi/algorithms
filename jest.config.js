@@ -7,7 +7,7 @@ module.exports = {
   transform: {
     '^.+\\.(t|j)s$': 'ts-jest',
   },
-  collectCoverageFrom: ['**/*.(t|j)s'],
+  collectCoverageFrom: ['**/*.(t|j)s', '!<rootDir>/**/index.ts'],
   clearMocks: true,
   restoreMocks: true,
   coverageDirectory: '../coverage',

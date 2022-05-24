@@ -12,8 +12,9 @@
     "setup": "yarn setup:githooks",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"{src}/**/*.ts\" --fix",
+    "build": "tsc -p .",
     "test:silent": "jest --verbose --silent",
-    "build": "tsc -p ."
+    "test:cov": "jest --coverage"
   },
   "devDependencies": {
     "@types/jest": "^27.5.1",
